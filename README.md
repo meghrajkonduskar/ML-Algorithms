@@ -1,7 +1,8 @@
 # ML-Algorithms
 
 Repository of Machine Learning Algorithms built and implemented from scratch.<br>
-This is code along practice with Patrick Loeber's tutorial on his Youtube channel [click here](https://www.youtube.com/playlist?list=PLqnslRFeH2Upcrywf-u2etjdxxkL8nl7E)
+This is code along practice with Patrick Loeber's tutorial on his Youtube channel [click here](https://www.youtube.com/playlist?list=PLqnslRFeH2Upcrywf-u2etjdxxkL8nl7E).<br>
+Along with my notes and code implementations
 
 ## Algorithms Implemented
 - KNN

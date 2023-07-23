@@ -12,10 +12,10 @@
 7. Specificity - Out of total actual negatives how many were True Negatives.
     $$Specificity = {Tn \over Tn + Fp}$$
 8. Misclassification Rate - No of wrong predictions out of all the predictions
-    $$ Misclassification Rate = {Fp + Fn \over Fp + Fn + Tp + Tn}
+    $$Misclassification \  Rate = {Fp + Fn \over Fp + Fn + Tp + Tn} $$
 9. ROC - Reciever Operating Characteristics. TPR vs FPR graph
 10. AUC - Area under Curve. auc > 0.7 - Good model
 11. TPR - True Positive Rate. Total True positives out of actual positives
-        $$ TPR = {Tp/Tp + Fn}$$
+        $$TPR = {Tp \over Tp + Fn} $$
 12. FPR - False Positive Rate. Total False positives out of actual negatives.
-        $$ FPR = {Fp/ Fp + Tn} $$
+        $$FPR = {Fp \over Fp + Tn} $$

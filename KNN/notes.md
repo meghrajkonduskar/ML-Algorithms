@@ -30,11 +30,11 @@ It's important to note that KNN has some limitations, such as being computationa
 2. K is hyperparameter.
 3. KNN is mostly used in healthcare.
 4. There are 2 types of distance calculation
-    - Euclidean
-			$$ d = {\sqrt{(x_2^2 - x_1^2 ) + (y_2^2 - y_1^2 )}} $$
+    - Euclidean - Displacement
+			$$d = {\sqrt{(x_2^2 - x_1^2 ) + (y_2^2 - y_1^2 )}} $$
 			
-	- Manhatten
-			$$ d = {(x_2 - x_1 ) + (y_2 - y_1 )}$$
+	- Manhatten - Distance
+			$$d = {(x_2 - x_1 ) + (y_2 - y_1 )}$$
 5. When K=n Underfitting. When K=1 Overfitting.
 6. KNN is sensitive to Outliers.
 7. KNN is lazy learner - Computes at the time of prediction.

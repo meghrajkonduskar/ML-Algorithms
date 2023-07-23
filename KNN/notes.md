@@ -31,7 +31,7 @@ It's important to note that KNN has some limitations, such as being computationa
 3. KNN is mostly used in healthcare.
 4. There are 2 types of distance calculation
     - Euclidean - Displacement
-			$$d = {\sqrt{(x_2^2 - x_1^2 ) + (y_2^2 - y_1^2 )}} $$
+			$$d = {\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}} $$
 			
 	- Manhatten - Distance
 			$$d = {(x_2 - x_1 ) + (y_2 - y_1 )}$$

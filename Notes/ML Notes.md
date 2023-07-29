@@ -19,3 +19,6 @@
         $$TPR = {Tp \over Tp + Fn} $$
 12. FPR - False Positive Rate. Total False positives out of actual negatives.
         $$FPR = {Fp \over Fp + Tn} $$
+13. K-fold CV - Divide training data into 4 parts. 3 parts used for training & 1 for testing.<br>
+14. Grid Search CV - Give parameters in dictionary. Grid Search CV will create model with all combination of parameters and give best result. It is very slow.
+15. Randomized Search CV - Give parameters in dictionary. Randomized Search CV will create some models with random combination of parameters. It is faster than Grid Search CV.

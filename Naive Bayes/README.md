@@ -39,21 +39,27 @@ Naive Bayes is a popular choice for text classification tasks (e.g., spam detect
 ## Important Notes
 1. Naive Bayes is used in Spam Ham detection.
 2. Its Naive because features are independent.
-3. Bayes Theorm - Mathematical formula to determine conditional probability. 
-    $$Posterior = {(Prior * Likelihood) \over evidence}$$
-    $$P(A/B) = {P(A)*P(B/A)\over P(B)}$$
-4. Laplace Smoothing - Problem of zero probability
-        $$P(E/f) = {0 + α \over n + αk}$$
+3. Bayes Theorm - Mathematical formula to determine conditional probability. <br>
+    $Posterior = {(Prior * Likelihood) \over evidence}$<br>
+    $P(A/B) = {P(A)*P(B/A)\over P(B)}$<br>
+4. Select dependent variable with highest probability<br>
+    $y = {argmax_y}{P(x_1|y)*P(x_2|y)*...*P(x_n|y)*P(y) \over P(X)}$<br>
+    $y = {argmax_y}{P(x_1|y)*P(x_2|y)*...*P(x_n|y)*P(y)}$<br>
+5. Laplace Smoothing - Problem of zero probability<br>
+        $P(E/f) = {0 + α \over n + αk}$<br>
         f => unknown variable<br>
         α => hyperparameter<br>
         k => No. of values a feature can take (No. of unique values in that feature)<br>
         n => No. of data points of your class.<br>
-5. If α is very low model will overfit.<br>
+6. If α is very low model will overfit.<br>
     if α is very high model will underfit.
-6. Problem with dimensions - lot of dimensions -> Prbability will be very low -> we take log of Probabilities.
-7. Imbalanced Data - if not rectified, model will be biased, it will favour the majority class
-8. Outliers - taken care by Laplace smoothing
-9. Naive Bayes if of 3 types.
+7. Problem with dimensions - lot of dimensions -> Probability will be very low -> we take log of Probabilities.<br>
+      $y = {argmax_y}{(log(P(x_1|y)) + log(P(x_2|y))+...+log(P(x_n|y)) + log(P(y)))}$
+8. Imbalanced Data - if not rectified, model will be biased, it will favour the majority class
+9. Outliers - taken care by Laplace smoothing
+10. Naive Bayes if of 3 types.
     - Guassian Naive Bayes - Numerical features
     - Bernoulli Naive Bayes - when features are Binomial (1, 0) or (True, False)
     - Multinomial Naive Bayes - more than 2 classes
+11. Conditional Probability - <br>
+   $P(x_1|y) = {1\over(\sqrt2\pi\sigma^2)}*\exp (-{(x_i - u_y)^2)\over 2\sigma^2})$
